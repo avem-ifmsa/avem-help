@@ -8,3 +8,6 @@ tmp/
 
 # Crash Log
 crash.log
+
+# Compass cache dir
+.sass-cache/
