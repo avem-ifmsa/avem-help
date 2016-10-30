@@ -12,10 +12,6 @@ compile '/**/*.md' do
 	layout '/default.*'
 end
 
-compile '/**/*.scss' do
-	filter :sass, Compass.sass_engine_options.merge(syntax: :scss)
-end
-
 route '/**/*.{html,md}' do
 	if item.identifier =~ '/index.*'
 		'/index.html'
@@ -24,10 +20,15 @@ route '/**/*.{html,md}' do
 	end
 end
 
+ignore '/**/_*.scss'
+
+compile '/**/*.scss' do
+	filter :sass, Compass.sass_engine_options.merge(syntax: :scss)
+	filter :rainpress
+end
+
 route '/**/*.scss' do
-	unless item.identifier.without_ext.start_with? '_'
-		item.identifier.without_ext + '.css'
-	end
+	item.identifier.without_ext + '.css'
 end
 
 compile '/**/*' do
