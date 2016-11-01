@@ -1,0 +1,137 @@
+@import "base";
+
+body {
+	font-family: sans-serif;
+	background: radial-gradient(circle at 50% 0%, #fff, #f2f2f2) no-repeat;
+}
+
+#header-top {
+	margin-top: 45px;
+	margin-bottom: 35px;
+}
+
+#header-extra {
+	top: 100px;
+	right: 75px;
+	font-size: .8rem;
+	position: absolute;
+	border-radius: 3px;
+	white-space: nowrap;
+}
+
+#help-btn {
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	text-decoration: none;
+	vertical-align: middle;
+	color: rgba(0, 0, 0, .8);
+	background-color: #f2f2f2;
+
+	&:hover {
+		color: rgba(0, 0, 0, .7);
+	}
+}
+
+#login-btn {
+	color: #000;
+	margin-left: 10px;
+	padding: 10px 15px;
+	border-radius: 3px;
+	white-space: nowrap;
+	display: inline-block;
+	text-decoration: none;
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 2px solid rgba(0, 0, 0, .9);
+
+	&:hover {
+		color: #fff;
+		background-color: rgba(0, 0, 0, .9);
+	}
+}
+
+#header-logo {
+	width: 124px;
+	height: 124px;
+	margin: 0 auto;
+	background-size: cover;
+	background-image: url("../images/avem-logo.png");
+}
+
+#header-navbar {
+	width: 80%;
+	margin: 0 auto;
+
+	ul {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	li {
+		float: left;
+		height: 35px;
+		padding: 0 20px;
+		margin-left: 1px;
+		line-height: 35px;
+		white-space: nowrap;
+		list-style-type: none;
+	}
+
+	.nav-link {
+		text-decoration: none;
+		box-sizing: border-box;
+		color: rgba(0, 0, 0, .8);
+		text-transform: uppercase;
+
+		&:hover {
+			border-bottom: 2px solid;
+		}
+	}
+}
+
+#search-area {
+	width: 60%;
+	height: 37px;
+	max-width: 650px;
+	margin: 35px auto;
+	text-align: center;
+	box-sizing: border-box;
+
+	form {
+		height: 100%;
+	}
+}
+
+#search-field {
+	width: 65%;
+	border: none;
+	height: 100%;
+	padding-left: 35px;
+	border-radius: 4px;
+	padding-right: 15px;
+	background-color: #ebebeb;
+	transition: background-color .15s ease-out;
+
+	&:focus {
+		outline: none;
+		background-color: #e3e3e3;
+	}
+}
+
+#search-btn {
+	width: 30%;
+	color: #fff;
+	height: 100%;
+	cursor: pointer;
+	margin-left: 10px;
+	border-radius: 4px;
+	background-color: #79a9ec;
+	border: 1px solid #639be9;
+
+	&:hover {
+		background-color: #82afed;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+	}
+}
