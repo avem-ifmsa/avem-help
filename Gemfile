@@ -1,8 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'nanoc'
+gem 'sass'
 gem 'adsf'
-gem 'kramdown'
+gem 'nanoc'
 gem 'compass'
+gem 'kramdown'
 gem 'rainpress'
-gem 'bootstrap', '~> 4.0.0.alpha5'
+gem 'font-awesome-sass'
+
+group :nanoc do
+	gem 'guard-nanoc'
+end
