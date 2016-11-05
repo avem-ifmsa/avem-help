@@ -16,8 +16,7 @@ bundle install
 Antes de poner en marcha la página, es necesario convertir nuestro código Markdown en código HTML. Para ello, es necesario ejecutar desde la carpeta del proyecto:
 
 ```sh
-bundle exec nanoc
-bundle exec nanoc view
+bundle exec nanoc live
 ```
 
-Una vez hecho esto, podemos ver el resultado en <http://localhost:3000>.
+Una vez hecho esto, podremos ver el resultado en <http://localhost:3000>.
