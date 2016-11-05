@@ -13,30 +13,32 @@
 	</head>
 
 	<body>
-		<header>
-			<div id="header-top">
+		<div class="page-wrapper">
+			<header>
 				<div id="header-logo"></div>
 				<div id="header-extra">
-					<a href="http://help.avem.es" id="help-btn"><span class="fa-stack fa-md">
-						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-question fa-inverse fa-stack-1x"></i>
-					</span></a>
-					<a id="login-btn" href="http://avem.es/login">Inicia sesión</a>
+					<a href="http://help.avem.es" id="help-btn" class="btn">
+						<span class="fa-stack fa-md">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-question fa-inverse fa-stack-1x"></i>
+						</span>
+					</a>
+					<a id="login-btn" class="btn" href="http://avem.es/login">Inicia sesión</a>
 				</div>
-			</div>
 
-			<nav id="header-navbar"><ul>
-				<li class="nav-item"><a class="nav-link" href="http://avem.es">Inicio</a></li>
-				<li class="nav-item"><a class="nav-link" href="http://avem.es/activities">Actividades</a></li>
-				<li class="nav-item"><a class="nav-link" href="http://avem.es/exchanges">Intercambios</a></li>
-				<li class="nav-item"><a class="nav-link" href="http://blog.avem.es">Blog</a></li>
-				<li class="nav-item"><a class="nav-link" href="http://avem.es/about">Quiénes somos</a></li>
-			</ul></nav>
-		</header>
+				<nav id="header-navbar"><ul class="nav__list">
+					<li class="nav__item"><a class="nav__link" href="http://avem.es">Inicio</a></li>
+					<li class="nav__item"><a class="nav__link" href="http://avem.es/activities">Actividades</a></li>
+					<li class="nav__item"><a class="nav__link" href="http://avem.es/exchanges">Intercambios</a></li>
+					<li class="nav__item"><a class="nav__link" href="http://blog.avem.es">Blog</a></li>
+					<li class="nav__item"><a class="nav__link" href="http://avem.es/about">Quiénes somos</a></li>
+				</ul></nav>
+			</header>
 
-		<div id="search-area"><form action="search">
-			<input id="search-field" type="search" name="q" placeholder="Lo que quiere buscar...">
-			<input id="search-btn" type="submit" value="Buscar">
-		</form></div>
+			<form id="search-area" action="search">
+				<input type="search" id="search-field" class="text-field" name="q" placeholder="Lo que quieras buscar...">
+				<input type="submit" id="search-btn" class="btn btn--primary" value="Buscar">
+			</form>
+		</div>
 	</body>
 </div>
