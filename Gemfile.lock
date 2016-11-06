@@ -79,14 +79,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  adsf
-  compass
-  font-awesome-sass
-  guard-nanoc
-  kramdown
-  nanoc
-  rainpress
-  sass
+  adsf (~> 1.2, >= 1.2.1)
+  compass (~> 1.0, >= 1.0.3)
+  font-awesome-sass (~> 4.7)
+  guard-nanoc (~> 2.1)
+  kramdown (~> 1.12)
+  nanoc (~> 4.3, >= 4.3.7)
+  rainpress (~> 1.0)
+  sass (~> 3.4, >= 3.4.22)
 
 BUNDLED WITH
    1.13.6
