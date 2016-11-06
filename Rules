@@ -3,6 +3,11 @@
 require 'compass'
 Compass.add_project_configuration 'config.rb'
 
+compile '/sitemap.xml' do
+	filter :erb
+	write '/sitemap.xml'
+end
+
 compile '/**/*.html' do
 	layout '/default.*'
 end
