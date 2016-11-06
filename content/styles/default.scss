@@ -2,10 +2,6 @@
 @import 'variables';
 @import 'mixins';
 
-html {
-	font-family: sans-serif;
-}
-
 body {
 	margin: 0;
 	overflow-x: hidden;
@@ -25,6 +21,10 @@ body {
 	max-width: $page-width;
 }
 
+.nav {
+	font-family: $display-font;
+}
+
 .nav__item {
 	height: 25px;
 	line-height: 25px;
@@ -42,6 +42,7 @@ body {
 	border: 0;
 	border-radius: 4px;
 	cursor: pointer;
+	font-family: $display-font;
 	padding: 0;
 	text-decoration: none;
 	white-space: nowrap;
@@ -76,7 +77,6 @@ body {
 	color: $extra-btn-color;
 	padding: 10px 15px;
 	text-transform: uppercase;
-	vertical-align: middle;
 
 	&:hover {
 		background-color: $extra-btn-color;
@@ -96,6 +96,7 @@ body {
 	background-color: $text-field-bg;
 	border: 0;
 	border-radius: 4px;
+	font-family: $display-font;
 	outline: 0;
 	padding: 0 15px;
 	transition: background-color .2s ease-out;
