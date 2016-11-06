@@ -1,195 +1,271 @@
-@import "base";
-@import "config";
+@import 'vendor';
+@import 'variables';
+@import 'mixins';
 
-.page-wrapper {
-	margin: 0 auto;
-	max-width: $page-width;
-}
-
-.nav {
-	&__list {
-		display: flex;
-		justify-content: space-around;
-	}
-
-	&__item {
-		float: left;
-		height: 35px;
-		padding: 0 20px;
-		margin-left: 1px;
-		line-height: 35px;
-		white-space: nowrap;
-		list-style-type: none;
-	}
-
-	&__link {
-		display: block;
-		cursor: pointer;
-		text-decoration: none;
-		color: rgba(0, 0, 0, .8);
-		text-transform: uppercase;
-
-		&:hover {
-			border-bottom: 2px solid;
-		}
-	}
-}
-
-.btn {
-	padding: 0;
-	border: none;
-	cursor: pointer;
-	border-radius: 4px;
-	white-space: nowrap;
-	text-decoration: none;
-
-	&:hover {
-		box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
-	}
-
-	&--default {
-		color: #fff;
-		background-color: $default-btn-color;
-
-		&:hover {
-			background-color: lighten($default-btn-color, 3%);
-		}
-	}
-
-	&--primary {
-		color: #fff;
-		background-color: $primary-btn-color;
-
-		&:hover {
-			border: 1px solid darken($primary-btn-color, 5%);
-			background-color: lighten($primary-btn-color, 3%);
-		}
-	}
-}
-
-.text-field {
-	border: none;
-	padding: 0 15px;
-	border-radius: 4px;
-	background-color: $text-field-bg;
-	transition: background-color .15s ease-out;
-
-	&:focus {
-		outline: none;
-		background-color: darken($text-field-bg, 3%);
-	}
+html {
+	font-family: sans-serif;
 }
 
 body {
 	margin: 0;
+	overflow-x: hidden;
 	padding: 0;
-	font-family: sans-serif;
-	background: radial-gradient(circle at 50% 0%, #fff, #f2f2f2) no-repeat;
 }
 
-#header-logo {
+.page-wrapper {
+	background: radial-gradient(circle at 50% 0%,
+	                            $page-bg-from,
+	                            $page-bg-to) no-repeat;
+	height: 100%;
+	position: relative;
+}
+
+.content-wrapper {
 	margin: 0 auto;
-	background-size: cover;
-	background-image: url("../images/avem-logo.png");
+	max-width: $page-width;
 }
 
-#header-extra {
-	z-index: 1;
-	font-size: .8rem;
-	border-radius: 3px;
+.nav__item {
+	height: 25px;
+	line-height: 25px;
+	list-style-type: none;
 	white-space: nowrap;
 }
 
-#help-btn {
-	vertical-align: middle;
-	color: rgba(0, 0, 0, .8);
+.nav__link {
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+}
 
-	&:hover{
-		box-shadow: none;
-		color: rgba(0, 0, 0, .7);
+.btn {
+	border: 0;
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 0;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.btn--primary {
+	background-color: $primary-btn-bg;
+	color: $primary-btn-color;
+
+	&:hover {
+		background-color: lighten($primary-btn-bg, 3%);
+		border: 1px solid darken($primary-btn-bg, 5%);
+		box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 	}
 }
 
-#login-btn {
-	color: #000;
-	margin-left: 10px;
-	padding: 10px 15px;
-	border-radius: 3px;
-	display: inline-block;
-	vertical-align: middle;
-	text-transform: uppercase;
-	background-color: transparent;
-	border: 2px solid rgba(0, 0, 0, .9);
+.btn--secondary {
+	background-color: $default-btn-bg;
+	color: $default-btn-color;
 
 	&:hover {
-		color: #fff;
-		background-color: rgba(0, 0, 0, .9);
+		background-color: lighten($default-btn-bg, 3%);
+		border: 1px solid darken($default-btn-bg, 5%);
+		box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+	}
+}
+
+.btn--extra {
+	background-color: $extra-btn-bg;
+	border: 2px solid $extra-btn-color;
+	border-radius: 3px;
+	color: $extra-btn-color;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	vertical-align: middle;
+
+	&:hover {
+		background-color: $extra-btn-color;
+		color: invert($extra-btn-color);
+	}
+}
+
+.btn--mono {
+	color: rgba(0, 0, 0, .8);
+
+	&:hover {
+		color: rgba(0, 0, 0, .6);
+	}
+}
+
+.text-field {
+	background-color: $text-field-bg;
+	border: 0;
+	border-radius: 4px;
+	outline: 0;
+	padding: 0 15px;
+	transition: background-color .2s ease-out;
+
+	&:focus {
+		background-color: darken($text-field-bg, 3%);
+	}
+}
+
+#header-logo {
+	background-image: url('../images/avem-logo.png');
+	background-size: cover;
+	margin: 0 auto;
+}
+
+#header-extra {
+	font-size: .9rem;
+	white-space: nowrap;
+
+	* {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	> *:not(:first-child) {
+		margin-left: 10px;
 	}
 }
 
 #search-area {
-	padding: 0;
-	width: 95%;
+	display: flex;
 	height: 38px;
 	max-width: 550px;
+	padding: 0;
 	text-align: center;
 	white-space: nowrap;
+	width: 95%;
 }
 
 #search-field {
-	width: 75%;
 	height: 100%;
+	width: 75%;
 }
 
 #search-btn {
-	width: 25%;
 	height: 100%;
-	margin-left: calc(15px - 1em);
+	margin-left: 7px;
+	width: 25%;
 }
 
 @media screen and (min-width: 768px) {
-	.page-wrapper {
+	.content-wrapper {
 		padding-top: 45px;
 	}
 
-	#header-navbar {
-		margin: 35px auto;
-		max-width: 1000px;
+	.nav--main {
+		.nav__list {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.nav__item {
+			float: left;
+			padding: 0 20px;
+			text-transform: uppercase;
+		}
+
+		.nav__link {
+			color: rgba(0, 0, 0, .8);
+
+			&:hover {
+				border-bottom: 2px solid;
+			}
+		}
+	}
+
+	#header-logo {
+		height: $logo-size;
+		width: $logo-size;
 	}
 
 	#header-extra {
-		right: 10%;
 		position: absolute;
+		right: 10%;
 		top: 45px + $logo-size / 2;
 		transform: translateY(-50%);
 	}
 
-	#header-logo {
-		width: $logo-size;
-		height: $logo-size;
+	#menu-toggle {
+		display: none;
+	}
+
+	#main-nav {
+		margin: 35px auto 25px;
+		max-width: $main-nav-max-width;
 	}
 
 	#search-area {
-		margin: 35px auto;
+		margin: 10px auto;
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.page-wrapper {
+		transform: none;
+		transition: transform $side-menu-slide-duration;
+	}
+
+	.page-wrapper--hidden {
+		transform: translateX($side-menu-width-md);
+
+		&::before {
+			background-color: transparent;
+			content: '';
+			display: block;
+			height: 100vh;
+			position: absolute;
+			width: 100vw;
+		}
+	}
+
+	.content-wrapper {
 		padding-top: 10px;
 	}
 
+	.nav--main {
+		background-color: $side-menu-bg;
+		box-sizing: border-box;
+		height: 100vh;
+		min-width: $side-menu-width-md;
+		padding: 20px 0;
+		position: absolute;
+		right: 100%;
+		top: 0;
+		z-index: 1;
+	}
+
+	.nav__item {
+		padding: 0 30px;
+	}
+
+	.nav__link {
+		color: $side-menu-color;
+
+		&:hover {
+			color: lighten($side-menu-color, 33%);
+		}
+	}
+
 	#header-logo {
-		width: $logo-size-sm;
 		height: $logo-size-sm;
+		width: $logo-size-sm;
 	}
 
 	#header-extra {
 		display: none;
 	}
 
-	#header-navbar {
-		display: none;
+	#menu-toggle {
+		background-color: transparent;
+		border: 0;
+		cursor: pointer;
+		font-size: 1.3rem;
+		left: 2%;
+		outline: 0;
+		padding: 10px;
+		position: absolute;
+		top: 10px + $logo-size-sm / 2;
+		transform: translateY(-50%);
+		z-index: 1;
 	}
 
 	#search-area {
