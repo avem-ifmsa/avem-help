@@ -1,0 +1,10 @@
+$display-font: sans-serif;
+$text-font: serif;
+
+a, button, input, label, nav {
+	font-family: $display-font;
+}
+
+article, p, p a {
+	font-family: $text-font;
+}

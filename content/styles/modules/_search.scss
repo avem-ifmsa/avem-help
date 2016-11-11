@@ -1,0 +1,14 @@
+$searchbox-bg: #ebebeb;
+
+.search__box {
+	background-color: $searchbox-bg;
+	border: 0;
+	border-radius: 4px;
+	outline: 0;
+	padding: 0 15px;
+	transition: background-color .2s ease-out;
+
+	&:focus {
+		background-color: darken($searchbox-bg, 3%);
+	}
+}

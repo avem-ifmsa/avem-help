@@ -2,16 +2,13 @@
 	"use strict";
 
 	function onMenuToggleClicked(event) {
-		var mainNav = document.getElementById("main-nav");
 		var pageWrapper = document.getElementById("page-wrapper");
-		if (!this.classList.contains("btn--pressed")) {
-			mainNav.classList.add("nav--visible");
-			pageWrapper.classList.add("page-wrapper--hidden");
-			this.classList.add("btn--pressed");
+		if (!this.classList.contains("is-btn-pressed")) {
+			pageWrapper.classList.add("is-menu-shown");
+			this.classList.add("is-btn-pressed");
 		} else {
-			mainNav.classList.remove("nav--visible");
-			pageWrapper.classList.remove("page-wrapper--hidden");
-			this.classList.remove("btn--pressed");
+			pageWrapper.classList.remove("is-menu-shown");
+			this.classList.remove("is-btn-pressed");
 		}
 	}
 

@@ -1,0 +1,79 @@
+$btn-border-radius: 4px;
+
+$btn-primary-bg: #79a9ec;
+$btn-primary-color: #fff;
+
+$btn-secondary-bg: #ccc;
+$btn-secondary-color: #fff;
+
+$btn-extra-bg: transparent;
+$btn-extra-border-radius: 3px;
+$btn-extra-color: #222;
+$btn-extra-hover-bg: #222;
+$btn-extra-hover-color: #fff;
+
+$btn-mono-bg: #333;
+$btn-mono-hover-bg: rgba(#333, .6);
+
+.btn {
+	border: 0;
+	border-radius: 4px;
+	box-sizing: border-box;
+	cursor: pointer;
+	outline: 0;
+	padding: 0;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.btn--primary {
+	background-color: $btn-primary-bg;
+	color: $btn-primary-color;
+
+	&:hover {
+		background-color: lighten($btn-primary-bg, 3%);
+		border: 1px solid darken($btn-primary-bg, 5%);
+		box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+	}
+}
+
+.btn--secondary {
+	background-color: $btn-secondary-bg;
+	color: $btn-secondary-color;
+
+	&:hover {
+		background-color: lighten($btn-secondary-bg, 3%);
+		border: 1px solid darken($btn-secondary-bg, 5%);
+		box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+	}
+}
+
+.btn--extra {
+	background-color: $btn-extra-bg;
+	border: 2px solid $btn-extra-color;
+	border-radius: $btn-extra-border-radius;
+	color: $btn-extra-color;
+	padding: 10px 15px;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: $btn-extra-hover-bg;
+		color: $btn-extra-hover-color;
+	}
+}
+
+.btn--mono {
+	color: $btn-mono-bg;
+
+	&:hover {
+		color: $btn-mono-hover-bg;
+	}
+}
+
+.btn--fixed {
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	outline: 0;
+	padding: 10px;
+}

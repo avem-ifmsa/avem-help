@@ -15,8 +15,7 @@
 		<meta property="og:url" content="http://help.avem.es">
 		<meta property="og:title" content="Centro de ayuda de AVEM">
 		<meta property="og:image" content="http://help.avem.es/images/avem-logo.png">
-		<meta property="og:description" content="El centro de ayuda de la Asociación
-		                                         Valenciana de Estudiantes de Medicina.">
+		<meta property="og:description" content="El centro de ayuda de la Asociación Valenciana de Estudiantes de Medicina.">
 
 		<!-- you don't need to keep this, but it's cool for stats! -->
 		<meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
@@ -31,37 +30,39 @@
 	</head>
 
 	<body>
-		<div id="page-wrapper" class="page-wrapper">
-			<div class="content-wrapper">
-				<header>
-					<button id="menu-toggle">
-						<i class="fa fa-bars fa-lg"></i>
-					</button>
+		<div id="page-wrapper" class="l-body">
+			<header class="l-header">
+				<button id="menu-toggle" class="l-header__hamburger btn btn--fixed">
+					<i class="fa fa-bars fa-lg"></i>
+				</button>
 
-					<div id="header-logo"></div>
-					<div id="header-extra">
-						<a href="http://help.avem.es" id="help-btn" class="btn btn--mono">
-							<span class="fa-stack fa-md">
-								<i class="fa fa-circle fa-stack-2x"></i>
-								<i class="fa fa-question fa-inverse fa-stack-1x"></i>
-							</span>
-						</a>
-						<a id="login-btn" class="btn btn--extra" href="http://avem.es/login">Inicia sesión</a>
-					</div>
-				</header>
+				<div class="l-header__logo"></div>
+				<div class="l-header__extra">
+					<a href="http://help.avem.es" id="help-btn" class="btn btn--mono">
+						<span class="fa-stack fa-md">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-question fa-inverse fa-stack-1x"></i>
+						</span>
+					</a>
+					<a id="login-btn" class="btn btn--extra" href="http://avem.es/login">Inicia sesión</a>
+				</div>
+			</header>
 
-				<nav id="main-nav" class="nav nav--main"><ul class="nav__list">
-					<li class="nav__item"><a class="nav__link" href="http://avem.es">Inicio</a></li>
-					<li class="nav__item"><a class="nav__link" href="http://avem.es/activities">Actividades</a></li>
-					<li class="nav__item"><a class="nav__link" href="http://avem.es/exchanges">Intercambios</a></li>
-					<li class="nav__item"><a class="nav__link" href="http://blog.avem.es">Blog</a></li>
-					<li class="nav__item"><a class="nav__link" href="http://avem.es/about">Quiénes somos</a></li>
-				</ul></nav>
+			<nav id="main-nav" class="l-nav nav">
+				<a class="nav__link" href="http://avem.es">Inicio</a>
+				<a class="nav__link" href="http://avem.es/activities">Actividades</a>
+				<a class="nav__link" href="http://avem.es/exchanges">Intercambios</a>
+				<a class="nav__link" href="http://blog.avem.es">Blog</a>
+				<a class="nav__link" href="http://avem.es/about">Quiénes somos</a>
+			</nav>
 
-				<form id="search-area" action="search">
-					<input type="search" id="search-field" class="text-field" name="q" placeholder="Lo que quieras buscar...">
-					<input type="submit" id="search-btn" class="btn btn--primary" value="Buscar">
-				</form>
+			<form class="l-search search" action="search">
+				<input type="search" class="l-search__input search__box" name="q" placeholder="Lo que quieras buscar...">
+				<input type="submit" class="l-search__btn btn btn--primary" value="Buscar">
+			</form>
+
+			<div class="l-content"
+				<%= yield %>
 			</div>
 		</div>
 	</body>

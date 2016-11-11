@@ -1,0 +1,7 @@
+$body-bg-gradient-color-1: #fff;
+$body-bg-gradient-color-2: #f2f2f2;
+
+body {
+	background: radial-gradient(circle at 50% 0, $body-bg-gradient-color-1,
+	                            $body-bg-gradient-color-2) no-repeat;
+}
