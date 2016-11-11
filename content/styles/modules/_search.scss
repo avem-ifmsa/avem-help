@@ -1,7 +1,8 @@
-$searchbox-bg: #ebebeb;
+$search-box-bg: #ebebeb;
+$search-box-focus-bg: darken($search-box-bg, 3%);
 
 .search__box {
-	background-color: $searchbox-bg;
+	background-color: $search-box-bg;
 	border: 0;
 	border-radius: 4px;
 	outline: 0;
@@ -9,6 +10,6 @@ $searchbox-bg: #ebebeb;
 	transition: background-color .2s ease-out;
 
 	&:focus {
-		background-color: darken($searchbox-bg, 3%);
+		background-color: $search-box-focus-bg;
 	}
 }

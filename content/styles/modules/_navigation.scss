@@ -2,7 +2,7 @@ $nav-color: rgba(#000, .8);
 $nav-color-sm: #c2c2c2;
 
 .nav {
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 769px) {
 		display: flex;
 		justify-content: space-around;
 	}
@@ -15,7 +15,7 @@ $nav-color-sm: #c2c2c2;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 769px) {
 		color: $nav-color;
 		padding: 5px 0;
 		text-transform: uppercase;

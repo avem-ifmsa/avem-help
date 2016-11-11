@@ -2,7 +2,7 @@ $header-logo-size: 124px;
 $header-logo-size-sm: 54px;
 
 .l-header {
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 769px) {
 		margin: 45px auto 35px;
 	}
 
@@ -16,7 +16,7 @@ $header-logo-size-sm: 54px;
 	background-size: cover;
 	margin: 0 auto;
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 769px) {
 		height: $header-logo-size;
 		width: $header-logo-size;
 	}
@@ -41,7 +41,7 @@ $header-logo-size-sm: 54px;
 		}
 	}
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 769px) {
 		position: absolute;
 		right: 10%;
 		top: 45px + $header-logo-size / 2;
@@ -54,7 +54,7 @@ $header-logo-size-sm: 54px;
 }
 
 .l-header__hamburger {
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 769px) {
 		display: none;
 	}
 

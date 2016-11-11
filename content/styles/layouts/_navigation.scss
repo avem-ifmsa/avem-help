@@ -13,7 +13,7 @@ body {
 }
 
 .l-body {
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 769px) {
 		margin: 0 auto;
 		max-width: $content-max-width;
 	}
@@ -38,7 +38,7 @@ body {
 }
 
 .l-nav {
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 769px) {
 		margin: 35px auto 25px;
 		max-width: $nav-max-width
 	}
