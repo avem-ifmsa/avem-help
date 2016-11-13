@@ -3,11 +3,6 @@
 require 'compass'
 Compass.add_project_configuration 'config.rb'
 
-compile '/sitemap.xml' do
-	filter :erb
-	write '/sitemap.xml'
-end
-
 compile '/index.html' do
 	filter :erb
 	layout '/article.*'
@@ -39,14 +34,14 @@ route '/**/*.html' do
 	end
 end
 
-ignore '/**/_*.scss'
+ignore '/styles/_*.scss'
 
-compile '/**/*.scss' do
+compile '/styles/*.scss' do
 	filter :sass, Compass.sass_engine_options.merge(syntax: :scss)
 	filter :rainpress
 end
 
-route '/**/*.scss' do
+route '/styles/*.scss' do
 	item.identifier.without_ext + '.css'
 end
 
