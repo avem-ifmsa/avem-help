@@ -13,7 +13,7 @@ $btn-extra-hover-bg: #222;
 $btn-extra-hover-color: #fff;
 
 $btn-mono-bg: #333;
-$btn-mono-hover-bg: rgba(#333, .6);
+$btn-mono-hover-bg: rgba(#333, .7);
 
 .btn {
 	border: 0;
@@ -33,7 +33,7 @@ $btn-mono-hover-bg: rgba(#333, .6);
 	&:hover {
 		background-color: lighten($btn-primary-bg, 3%);
 		border: 1px solid darken($btn-primary-bg, 5%);
-		box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+		box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
 	}
 }
 
@@ -44,7 +44,7 @@ $btn-mono-hover-bg: rgba(#333, .6);
 	&:hover {
 		background-color: lighten($btn-secondary-bg, 3%);
 		border: 1px solid darken($btn-secondary-bg, 5%);
-		box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+		box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
 	}
 }
 

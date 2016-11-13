@@ -7,7 +7,7 @@
 
 		<title>Centro de Ayuda de AVEM</title>
 		<script src="scripts/index.js"></script>
-		<link rel="stylesheet" href="styles/default.css">
+		<link rel="stylesheet" href="/styles/default.css">
 
 		<!-- OpenGraph metadata -->
 		<meta property="og:type" content="website">
@@ -31,13 +31,13 @@
 
 	<body>
 		<div id="page-wrapper" class="l-body">
-			<header class="l-header">
-				<button id="menu-toggle" class="l-header__hamburger btn btn--fixed">
+			<header class="l-header header">
+				<button id="menu-toggle" class="header__hamburger btn btn--fixed">
 					<i class="fa fa-bars fa-lg"></i>
 				</button>
 
-				<div class="l-header__logo"></div>
-				<div class="l-header__extra">
+				<div class="header__logo"></div>
+				<div class="header__extra">
 					<a href="http://help.avem.es" id="help-btn" class="btn btn--mono">
 						<span class="fa-stack fa-md">
 							<i class="fa fa-circle fa-stack-2x"></i>
@@ -56,14 +56,13 @@
 				<a class="nav__link" href="http://avem.es/about">Quiénes somos</a>
 			</nav>
 
-			<form class="l-search search" action="search">
-				<input type="search" class="l-search__input search__box" name="q" placeholder="Lo que quieras buscar...">
-				<input type="submit" class="l-search__btn btn btn--primary" value="Buscar">
-			</form>
-
-			<div class="l-content"
+			<div>
 				<%= yield %>
 			</div>
+
+			<footer class="l-footer footer">
+
+			</footer>
 		</div>
 	</body>
 </div>

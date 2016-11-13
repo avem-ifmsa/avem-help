@@ -8,16 +8,30 @@ compile '/sitemap.xml' do
 	write '/sitemap.xml'
 end
 
-compile '/**/*.html' do
-	layout '/default.*'
+compile '/index.html' do
+	filter :erb
+	layout '/article.*'
 end
 
-compile '/**/*.md' do
+route '/index.html' do
+	'/index.html'
+end
+
+compile '/articles/*.md' do
 	filter :kramdown
+	layout '/article.*'
+end
+
+route '/articles/*.md' do
+	"/#{category_slug item}/#{article_slug item}.html"
+end
+
+compile '/**/*.html' do
+	filter :erb
 	layout '/default.*'
 end
 
-route '/**/*.{html,md}' do
+route '/**/*.html' do
 	if item.identifier =~ '/index.*'
 		'/index.html'
 	else

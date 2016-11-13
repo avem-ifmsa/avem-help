@@ -1,28 +1,11 @@
 .l-search {
-	display: flex;
-	height: 38px;
-	max-width: 550px;
-	white-space: nowrap;
-	width: 95%;
-
-	& > * {
-		height: 100%;
-		margin: 0 5px;
-	}
-
-	&__input {
-		width: 75%;
-	}
-
-	&__btn {
-		width: 25%;
-	}
+	margin: 0 auto;
 
 	@media screen and (min-width: 769px) {
-		margin: 30px auto;
+		width: 85%;
 	}
 
 	@media screen and (max-width: 768px) {
-		margin: 10px auto;
+		width: 95%;
 	}
 }

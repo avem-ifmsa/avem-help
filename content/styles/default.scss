@@ -5,10 +5,16 @@
 @import 'base/typography';
 
 @import 'layouts/content';
+@import 'layouts/contact';
+@import 'layouts/footer';
 @import 'layouts/header';
-@import 'layouts/navigation';
+@import 'layouts/responsive';
 @import 'layouts/search';
 
 @import 'modules/buttons';
+@import 'modules/contact';
+@import 'modules/footer';
+@import 'modules/header';
+@import 'modules/index';
 @import 'modules/navigation';
 @import 'modules/search';

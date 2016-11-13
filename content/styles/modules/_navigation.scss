@@ -6,33 +6,33 @@ $nav-color-sm: #c2c2c2;
 		display: flex;
 		justify-content: space-around;
 	}
-}
 
-.nav__link {
-	cursor: pointer;
-	display: block;
-	text-decoration: none;
-	text-overflow: ellipsis;
-	white-space: nowrap;
+	&__link {
+		cursor: pointer;
+		display: block;
+		text-decoration: none;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 
-	@media screen and (min-width: 769px) {
-		color: $nav-color;
-		padding: 5px 0;
-		text-transform: uppercase;
+		@media screen and (min-width: 769px) {
+			color: $nav-color;
+			padding: 5px 0;
+			text-transform: uppercase;
 
-		&:hover {
-			box-shadow: 0 2px $nav-color;
+			&:hover {
+				box-shadow: 0 2px $nav-color;
+			}
 		}
-	}
 
-	@media screen and (max-width: 768px) {
-		color: $nav-color-sm;
-		margin: 0 10%;
-		overflow-x: hidden;
-		padding: 4px 0;
+		@media screen and (max-width: 768px) {
+			color: $nav-color-sm;
+			margin: 0 10%;
+			overflow-x: hidden;
+			padding: 4px 0;
 
-		&:hover {
-			color: lighten($nav-color-sm, 33%);
+			&:hover {
+				color: lighten($nav-color-sm, 33%);
+			}
 		}
 	}
 }

@@ -1,10 +1,6 @@
-$content-max-width: 2100px;
-
 $side-menu-bg: #323232;
 $side-menu-slide-duration: .4s;
 $side-menu-width: 275px;
-
-$nav-max-width: 1000px;
 
 body {
 	@media screen and (max-width: 768px) {
@@ -13,9 +9,10 @@ body {
 }
 
 .l-body {
+	margin: 0 auto;
+
 	@media screen and (min-width: 769px) {
-		margin: 0 auto;
-		max-width: $content-max-width;
+		max-width: 900px;
 	}
 
 	@media screen and (max-width: 768px) {
@@ -29,9 +26,9 @@ body {
 				background-color: transparent;
 				content: '';
 				display: block;
-				height: 100vh;
+				height: 100%;
 				position: absolute;
-				width: 100vw;
+				width: 100%;
 			}
 		}
 	}
@@ -40,14 +37,14 @@ body {
 .l-nav {
 	@media screen and (min-width: 769px) {
 		margin: 35px auto 25px;
-		max-width: $nav-max-width
 	}
 
 	@media screen and (max-width: 768px) {
+		box-sizing: border-box;
 		background-color: $side-menu-bg;
 		height: 100vh;
 		padding: 20px 0;
-		position: fixed;
+		position: absolute;
 		right: 100%;
 		top: 0;
 		width: $side-menu-width;

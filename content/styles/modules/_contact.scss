@@ -1,0 +1,27 @@
+$contact-color: rgba(#000, .8);
+$contact-max-width: 35%;
+
+.contact-cta {
+	@media screen and (max-width: 768px) {
+		font-size: 0.8rem;
+	}
+
+	& > * {
+		display: block;
+	}
+
+	&__head {
+		color: $contact-color;
+		font-size: 1.3em;
+		margin-bottom: 15px;
+		text-align: center;
+		font-family: $display-font;
+	}
+
+	&__btn {
+		margin: 0 auto;
+		padding: 10px;
+		text-align: center;
+		width: 160px;
+	}
+}

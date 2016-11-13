@@ -1,0 +1,43 @@
+$article-color: #4c8ce6;
+$article-hover-bg: #e0ebfb;
+
+.index {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+
+	&__group {
+		padding: 5px;
+	}
+
+	&__link {
+		color: inherit;
+		cursor: pointer;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+	&__category {
+		font-size: 1.1em;
+		font-weight: normal;
+	}
+
+	&__articles {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__article {
+		border-radius: 2px;
+		color: $article-color;
+		margin: 0;
+		margin-left: -10px;
+		padding: 3px 10px;
+
+		&:hover {
+			background-color: $article-hover-bg;
+		}
+	}
+}

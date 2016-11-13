@@ -1,0 +1,62 @@
+$header-logo-size: 124px;
+$header-logo-size-sm: 45px;
+
+.header {
+	position: relative;
+
+	&__logo {
+		background-image: url('../images/avem-logo.png');
+		background-size: cover;
+		margin: 0 auto;
+
+		@media screen and (min-width: 769px) {
+			height: $header-logo-size;
+			width: $header-logo-size;
+		}
+
+		@media screen and (max-width: 768px) {
+			height: $header-logo-size-sm;
+			width: $header-logo-size-sm;
+		}
+	}
+
+	&__extra {
+		font-size: .9em;
+		white-space: nowrap;
+
+		& > * {
+			display: inline-block;
+			vertical-align: middle;
+
+			&:not(:first-child) {
+				margin-left: 10px;
+			}
+		}
+
+		@media screen and (min-width: 769px) {
+			position: absolute;
+			right: 2%;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	&__hamburger {
+		@media screen and (min-width: 769px) {
+			display: none;
+		}
+
+		@media screen and (max-width: 768px) {
+			font-size: 1.3em;
+			left: 2%;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 1;
+		}
+	}
+}
