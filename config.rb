@@ -6,6 +6,7 @@ require 'font-awesome-sass'
 http_path = "/"
 css_dir = "output/styles"
 sass_dir = "content/styles"
+fonts_dir = "content/fonts"
 images_dir = "content/images"
 javascripts_dir = "content/scripts"
 
