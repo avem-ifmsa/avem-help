@@ -1,7 +1,9 @@
 .l-footer {
+	max-width: 750px;
+	width: 95%;
+
 	@media screen and (max-width: 769px) {
 		margin: 20px auto;
-		width: 95%;
 	}
 
 	@media screen and (min-width: 768px) {

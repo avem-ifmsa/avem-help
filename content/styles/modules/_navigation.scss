@@ -1,5 +1,6 @@
 $nav-color: rgba(#000, .8);
 $nav-color-sm: #c2c2c2;
+$nav-hover-color-sm: lighten($nav-color-sm, 33%);
 
 .nav {
 	@media screen and (min-width: 769px) {
@@ -13,7 +14,13 @@ $nav-color-sm: #c2c2c2;
 		}
 
 		& > :not(:first-child) {
-			margin-left: 40px;
+			margin-left: 60px;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		& > * {
+			display: block;
 		}
 	}
 
@@ -40,7 +47,7 @@ $nav-color-sm: #c2c2c2;
 			text-overflow: ellipsis;
 
 			&:hover {
-				color: lighten($nav-color-sm, 33%);
+				color: $nav-hover-color-sm;
 			}
 		}
 	}
