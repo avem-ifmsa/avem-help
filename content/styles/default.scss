@@ -1,6 +1,7 @@
 @import 'vendor/_font-awesome';
 
 @import 'base/color';
+@import 'base/links';
 @import 'base/reset';
 @import 'base/typography';
 
@@ -12,7 +13,7 @@
 @import 'layouts/search';
 
 @import 'modules/buttons';
-@import 'modules/contact';
+@import 'modules/cta';
 @import 'modules/footer';
 @import 'modules/header';
 @import 'modules/index';

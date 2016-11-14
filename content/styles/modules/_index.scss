@@ -1,5 +1,5 @@
-$article-color: #4c8ce6;
-$article-hover-bg: #e0ebfb;
+$index-article-color: #4c8ce6;
+$index-article-hover-bg: #e0ebfb;
 
 .index {
 	display: flex;
@@ -31,13 +31,13 @@ $article-hover-bg: #e0ebfb;
 
 	&__article {
 		border-radius: 2px;
-		color: $article-color;
+		color: $index-article-color;
 		margin: 0;
 		margin-left: -10px;
 		padding: 3px 10px;
 
 		&:hover {
-			background-color: $article-hover-bg;
+			background-color: $index-article-hover-bg;
 		}
 	}
 }

@@ -1,11 +1,5 @@
 .l-search {
 	margin: 0 auto;
-
-	@media screen and (min-width: 769px) {
-		width: 85%;
-	}
-
-	@media screen and (max-width: 768px) {
-		width: 95%;
-	}
+	max-width: 645px;
+	width: 95%;
 }

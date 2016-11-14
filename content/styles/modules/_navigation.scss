@@ -3,15 +3,23 @@ $nav-color-sm: #c2c2c2;
 
 .nav {
 	@media screen and (min-width: 769px) {
-		display: flex;
-		justify-content: space-around;
+		text-align: center;
+		word-spacing: 0;
+		white-space: nowrap;
+
+		& > * {
+			display: inline-block;
+			word-spacing: normal;
+		}
+
+		& > :not(:first-child) {
+			margin-left: 40px;
+		}
 	}
 
 	&__link {
 		cursor: pointer;
-		display: block;
 		text-decoration: none;
-		text-overflow: ellipsis;
 		white-space: nowrap;
 
 		@media screen and (min-width: 769px) {
@@ -29,6 +37,7 @@ $nav-color-sm: #c2c2c2;
 			margin: 0 10%;
 			overflow-x: hidden;
 			padding: 4px 0;
+			text-overflow: ellipsis;
 
 			&:hover {
 				color: lighten($nav-color-sm, 33%);

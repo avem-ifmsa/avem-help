@@ -1,7 +1,6 @@
-$contact-color: rgba(#000, .8);
-$contact-max-width: 35%;
+$cta-color: rgba(#000, .8);
 
-.contact-cta {
+.cta {
 	@media screen and (max-width: 768px) {
 		font-size: 0.8rem;
 	}
@@ -11,7 +10,7 @@ $contact-max-width: 35%;
 	}
 
 	&__head {
-		color: $contact-color;
+		color: $cta-color;
 		font-size: 1.3em;
 		margin-bottom: 15px;
 		text-align: center;
