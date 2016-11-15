@@ -2,12 +2,14 @@
 	<% article_categories.each do |category| %>
 		<div class="index__group">
 			<h1 class="index__category">
-				<a class="index__link" href="#"><%= category %></a>
+				<a class="index__link" href="/<%= slug_for(category) %>"><%= category %></a>
 			</h1>
 			<ul class="index__articles">
 				<% category_articles(category).each do |article| %>
 					<li class="index__article">
-						<a class="index__link" href="#"><%= article[:title] %></a>
+						<a class="index__link" href="<%= article_link(article) %>">
+							<%= article_title(article) %>
+						</a>
 					</li>
 				<% end %>
 			</ul>

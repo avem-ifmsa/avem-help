@@ -9,16 +9,25 @@ compile '/index.html' do
 end
 
 route '/index.html' do
-	'/index.html'
+	item.identifier.to_s
 end
 
-compile '/articles/*.md' do
+compile '/articles/**/*.md' do
 	filter :kramdown
 	layout '/article.*'
 end
 
-route '/articles/*.md' do
-	"/#{category_slug item}/#{article_slug item}.html"
+route '/articles/**/*.md' do
+	article_link item
+end
+
+compile '/**/*.php' do
+	filter :erb
+	layout '/default.*'
+end
+
+route '/**/*.php' do
+	item.identifier.to_s
 end
 
 compile '/**/*.html' do
@@ -34,14 +43,14 @@ route '/**/*.html' do
 	end
 end
 
-ignore '/styles/_*.scss'
+ignore '/styles/**/_*.scss'
 
-compile '/styles/*.scss' do
+compile '/styles/**/*.scss' do
 	filter :sass, Compass.sass_engine_options.merge(syntax: :scss)
-	filter :rainpress
+#	filter :rainpress
 end
 
-route '/styles/*.scss' do
+route '/styles/**/*.scss' do
 	item.identifier.without_ext + '.css'
 end
 
