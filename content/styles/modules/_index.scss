@@ -9,6 +9,8 @@ $index-article-hover-bg: #e0ebfb;
 
 	&__group {
 		padding: 5px;
+		flex-basis: 50%;
+		box-sizing: border-box;
 	}
 
 	&__link {
