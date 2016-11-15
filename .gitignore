@@ -11,3 +11,6 @@ crash.log
 
 # Compass cache dir
 .sass-cache/
+
+# Dotenv config file
+.env

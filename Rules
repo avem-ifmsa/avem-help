@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 
+require 'dotenv'
+Dotenv.load
+
 require 'compass'
 Compass.add_project_configuration 'config.rb'
 
