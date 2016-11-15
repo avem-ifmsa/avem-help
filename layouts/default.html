@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html>
-	<head lang="es">
+	<head lang="es" itemscope itemtype="http://schema.org/WebSite">
 		<meta charset="UTF-8">
 		<meta name="keywords" content="avem,uv,ayuda,dudas,faq,help,support">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Centro de Ayuda de AVEM</title>
-		<script src="scripts/index.js"></script>
-		<link rel="stylesheet" href="/styles/default.css">
+		<!-- Schema.org Structured Data for Google -->
+		<title itemprop="name">Centro de Ayuda de AVEM</title>
+		<link rel="canonical" ref="http://help.avem.es" itemprop="url">
 
 		<!-- OpenGraph metadata -->
 		<meta property="og:type" content="website">
@@ -19,6 +19,9 @@
 
 		<!-- you don't need to keep this, but it's cool for stats! -->
 		<meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
+
+		<script src="scripts/index.js"></script>
+		<link rel="stylesheet" href="/styles/default.css">
 
 		<!-- Google Analytics tracking -->
 		<script>
