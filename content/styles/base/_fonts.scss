@@ -1,0 +1,16 @@
+$display-font: sans-serif;
+$text-font: 'Libre Franklin';
+
+@font-face {
+	font-family: 'Libre Franklin';
+	src: url(/fonts/libre-franklin.regular.otf),
+	     url(/fonts/libre-franklin.regular.ttf);
+}
+
+a, button, input, label, nav {
+	font-family: $display-font;
+}
+
+article, p, p a {
+	font-family: $text-font;
+}

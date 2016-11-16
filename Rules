@@ -8,7 +8,7 @@ Compass.add_project_configuration 'config.rb'
 
 compile '/index.html' do
 	filter :erb
-	layout '/article.*'
+	layout '/content.html'
 end
 
 route '/index.html' do
@@ -16,7 +16,7 @@ route '/index.html' do
 end
 
 compile '/articles/**/*.md' do
-	filter :kramdown
+	filter :kramdown, header_offset: 1
 	layout '/article.*'
 end
 

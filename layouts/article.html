@@ -1,15 +1,13 @@
-<% render '/default.html' do %>
-	<form class="l-search search" action="search">
-		<input type="search" class="search__input" name="q" placeholder="Lo que quieras buscar...">
-		<input type="submit" class="search__btn btn btn--primary" value="Buscar">
-	</form>
-
-	<div class="l-content">
-		<%= yield %>
-	</div>
-
-	<div class="l-contact cta">
-		<span class="cta__head">¿No has encontrado lo que buscabas?</span>
-		<a class="cta__btn btn btn--primary" href="/contact">Contáctanos</a>
-	</div>
+<% render '/content.html' do %>
+	<article class="article">
+		<header class="article__header">
+			<a class="article__category" href="<%= category_link(@item) %>">
+				<%= article_category(@item) %>
+			</a>
+			<h1 class="article__title"><%= article_title(@item) %></h1>
+		</header>
+		<div class="article__content">
+			<%= yield %>
+		</div>
+	</article>
 <% end %>

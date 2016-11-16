@@ -5,12 +5,10 @@ $nav-hover-color-sm: lighten($nav-color-sm, 33%);
 .nav {
 	@media screen and (min-width: 769px) {
 		text-align: center;
-		word-spacing: 0;
 		white-space: nowrap;
 
 		& > * {
 			display: inline-block;
-			word-spacing: normal;
 		}
 
 		& > :not(:first-child) {
