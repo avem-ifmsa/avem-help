@@ -50,7 +50,7 @@ ignore '/styles/**/_*.scss'
 
 compile '/styles/**/*.scss' do
 	filter :sass, Compass.sass_engine_options.merge(syntax: :scss)
-#	filter :rainpress
+	filter :rainpress
 end
 
 route '/styles/**/*.scss' do
