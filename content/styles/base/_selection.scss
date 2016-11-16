@@ -1,0 +1,7 @@
+$selection-bg: #79a9ec;
+$selection-color: #fff;
+
+::selection {
+	background: $selection-bg;
+	color: $selection-color;
+}
