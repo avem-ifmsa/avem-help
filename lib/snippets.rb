@@ -26,6 +26,6 @@ def gcs_search_results
 		    s.parentNode.insertBefore(gcse, s);
 		  })();
 		</script>
-		<gcse:searchresults-only></gcse:searchresults-only>
+		<gcse:searchresults-only linktarget="_parent"></gcse:searchresults-only>
 	]
 end

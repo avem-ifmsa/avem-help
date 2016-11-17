@@ -1,3 +1,6 @@
+$search-results-entry-hover-bg: #e9f1fc;
+$search-results-entry-title-color: #4c8ce6;
+
 .search-results {
 	.gsc-control-cse {
 		background-color: transparent;
@@ -5,25 +8,49 @@
 		padding: 0;
 	}
 
+	.gsc-above-wrapper-area {
+		display: none;
+	}
+
+	.gcsc-branding {
+		display: none;
+	}
+
 	.gsc-result-info {
 		display: none;
 	}
 
 	.gsc-result {
+		background-color: transparent !important;
 		border: 0 !important;
+		border-radius: 4px;
+		cursor: pointer;
+		padding: 20px 0;
+
+		&:hover {
+			background-color: $search-results-entry-hover-bg !important;
+		}
+	}
+
+	.gs-title, .gs-title * {
+		color: $search-results-entry-title-color !important;
+		font-weight: normal !important;
+		text-decoration: none !important;
 	}
 
 	.gsc-url-top {
 		display: none;
 	}
 
+	.gs-snippet * {
+		font-weight: normal !important;
+	}
+
 	.gsc-cursor-box {
 		margin-bottom: 0 !important;
 	}
 
-	@media screen and (max-width: 768px) {
-		.gcsc-branding {
-			display: none;
-		}
+	.gcsc-branding {
+		display: none;
 	}
 }
