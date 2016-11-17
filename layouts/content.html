@@ -1,6 +1,9 @@
 <% render '/default.html' do %>
-	<form class="l-search search-box" action="/search" method="get">
-		<input type="search" class="search-box__input" name="q" placeholder="Lo que quieras buscar...">
+	<form class="l-search search-box" action="/search" method="get"
+	      itemscope itemtype="http://schema.org/SearchAction" itemprop="potentialAction">
+		<meta itemprop="target" content="http://help.avem.es/search?q={q}"/>
+		<input type="search" class="search-box__input" name="q" required
+		       placeholder="Lo que quieras buscar..." itemprop="query-input">
 		<input type="submit" class="search-box__btn btn btn--primary" value="Buscar">
 	</form>
 
