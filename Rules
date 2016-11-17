@@ -15,6 +15,15 @@ route '/index.html' do
 	item.identifier.to_s
 end
 
+compile '/search.html' do
+	filter :erb
+	layout '/content.html'
+end
+
+route '/search.html' do
+	item.identifier.without_ext + '/index.html'
+end
+
 compile '/articles/**/*.md' do
 	filter :kramdown, header_offset: 1
 	layout '/article.*'
@@ -26,11 +35,7 @@ end
 
 compile '/**/*.php' do
 	filter :erb
-	layout '/default.*'
-end
-
-route '/**/*.php' do
-	item.identifier.to_s
+	write item.identifier.to_s
 end
 
 compile '/**/*.html' do

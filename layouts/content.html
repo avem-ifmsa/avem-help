@@ -1,7 +1,7 @@
 <% render '/default.html' do %>
-	<form class="l-search search" action="search">
-		<input type="search" class="search__input" name="q" placeholder="Lo que quieras buscar...">
-		<input type="submit" class="search__btn btn btn--primary" value="Buscar">
+	<form class="l-search search-box" action="/search" method="get">
+		<input type="search" class="search-box__input" name="q" placeholder="Lo que quieras buscar...">
+		<input type="submit" class="search-box__btn btn btn--primary" value="Buscar">
 	</form>
 
 	<div class="l-content">

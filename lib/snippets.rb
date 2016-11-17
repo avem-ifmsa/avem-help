@@ -12,3 +12,20 @@ def ga_tracking_code
 		</script>
 	]
 end
+
+def gcs_search_results
+	%Q[
+		<script>
+		  (function() {
+		    var cx = '017496299940429983127:gi7q8brnwgo';
+		    var gcse = document.createElement('script');
+		    gcse.type = 'text/javascript';
+		    gcse.async = true;
+		    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(gcse, s);
+		  })();
+		</script>
+		<gcse:searchresults-only></gcse:searchresults-only>
+	]
+end

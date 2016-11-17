@@ -1,0 +1,29 @@
+.search-results {
+	.gsc-control-cse {
+		background-color: transparent;
+		border: 0;
+		padding: 0;
+	}
+
+	.gsc-result-info {
+		display: none;
+	}
+
+	.gsc-result {
+		border: 0 !important;
+	}
+
+	.gsc-url-top {
+		display: none;
+	}
+
+	.gsc-cursor-box {
+		margin-bottom: 0 !important;
+	}
+
+	@media screen and (max-width: 768px) {
+		.gcsc-branding {
+			display: none;
+		}
+	}
+}

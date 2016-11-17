@@ -1,7 +1,7 @@
-$search-input-bg: #ebebeb;
-$search-input-focus-bg: darken($search-input-bg, 5%);
+$search-box-input-bg: #ebebeb;
+$search-box-input-focus-bg: darken($search-box-input-bg, 5%);
 
-.search {
+.search-box {
 	display: flex;
 	height: 37px;
 	justify-content: space-between;
@@ -15,7 +15,7 @@ $search-input-focus-bg: darken($search-input-bg, 5%);
 	}
 
 	&__input {
-		background-color: $search-input-bg;
+		background-color: $search-box-input-bg;
 		border: 0;
 		border-radius: 4px;
 		flex-grow: 3;
@@ -24,7 +24,7 @@ $search-input-focus-bg: darken($search-input-bg, 5%);
 		transition: background-color .2s ease-out;
 
 		&:focus {
-			background-color: $search-input-focus-bg;
+			background-color: $search-box-input-focus-bg;
 		}
 	}
 
