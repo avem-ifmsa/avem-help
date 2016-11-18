@@ -33,16 +33,11 @@ $search-results-entry-title-color: #4c8ce6;
 
 	.gs-title, .gs-title * {
 		color: $search-results-entry-title-color !important;
-		font-weight: normal !important;
 		text-decoration: none !important;
 	}
 
 	.gsc-url-top {
 		display: none;
-	}
-
-	.gs-snippet * {
-		font-weight: normal !important;
 	}
 
 	.gsc-cursor-box {

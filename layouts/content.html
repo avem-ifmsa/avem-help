@@ -1,5 +1,5 @@
 <% render '/default.html' do %>
-	<form class="l-search search-box" action="/search" method="get"
+	<form class="l-search search-box nocontent" action="/search" method="get"
 	      itemscope itemtype="http://schema.org/SearchAction" itemprop="potentialAction">
 		<meta itemprop="target" content="http://help.avem.es/search?q={q}"/>
 		<input type="search" class="search-box__input" name="q" required
@@ -11,7 +11,7 @@
 		<%= yield %>
 	</div>
 
-	<div class="l-contact cta">
+	<div class="l-contact cta nocontent">
 		<span class="cta__head">¿No has encontrado lo que buscabas?</span>
 		<a class="cta__btn btn btn--primary" href="/contact">Contáctanos</a>
 	</div>
