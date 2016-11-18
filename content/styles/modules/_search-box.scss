@@ -10,10 +10,6 @@ $search-box-input-focus-bg: darken($search-box-input-bg, 5%);
 		height: 100%;
 	}
 
-	& > :not(:first-child) {
-		margin-left: 5px;
-	}
-
 	&__input {
 		background-color: $search-box-input-bg;
 		border: 0;
@@ -29,6 +25,7 @@ $search-box-input-focus-bg: darken($search-box-input-bg, 5%);
 	}
 
 	&__btn {
+		margin-left: 5px;
 		flex-grow: 1;
 	}
 }

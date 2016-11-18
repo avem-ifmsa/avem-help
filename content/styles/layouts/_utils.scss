@@ -1,0 +1,11 @@
+.l-hide-small {
+	@media screen and (max-width: 769px) {
+		display: none !important;
+	}
+}
+
+.l-hide-desktop {
+	@media screen and (min-width: 768px) {
+		display: none !important;
+	}
+}

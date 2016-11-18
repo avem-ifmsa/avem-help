@@ -28,14 +28,22 @@
 	</head>
 
 	<body>
+		<nav id="side-nav" class="l-hide-desktop l-sidenav nav nav--stacked nocontent">
+			<a class="nav__link" href="http://avem.es">Inicio</a>
+			<a class="nav__link" href="http://avem.es/activities">Actividades</a>
+			<a class="nav__link" href="http://avem.es/exchanges">Intercambios</a>
+			<a class="nav__link" href="http://blog.avem.es">Blog</a>
+			<a class="nav__link" href="http://avem.es/about">Quiénes somos</a>
+		</nav>
+
 		<div id="page-wrapper" class="l-body">
 			<header class="l-header header nocontent">
-				<button id="menu-toggle" class="header__hamburger btn btn--fixed">
+				<button id="menu-toggle" class="l-hide-desktop header__hamburger btn btn--fixed">
 					<i class="fa fa-bars fa-lg"></i>
 				</button>
 
 				<div class="header__logo"></div>
-				<div class="header__extra">
+				<div class="l-hide-small header__extra">
 					<a href="http://help.avem.es" id="help-btn" class="btn btn--mono">
 						<span class="fa-stack fa-md">
 							<i class="fa fa-circle fa-stack-2x"></i>
@@ -46,7 +54,7 @@
 				</div>
 			</header>
 
-			<nav id="main-nav" class="l-nav nav nocontent">
+			<nav class="l-hide-small l-nav nav nav--span nocontent">
 				<a class="nav__link" href="http://avem.es">Inicio</a>
 				<a class="nav__link" href="http://avem.es/activities">Actividades</a>
 				<a class="nav__link" href="http://avem.es/exchanges">Intercambios</a>
@@ -54,12 +62,12 @@
 				<a class="nav__link" href="http://avem.es/about">Quiénes somos</a>
 			</nav>
 
-			<div>
+			<main class="l-main">
 				<%= yield %>
-			</div>
+			</main>
 
 			<footer class="l-footer footer nocontent">
-
+				<!-- content -->
 			</footer>
 		</div>
 	</body>

@@ -20,7 +20,7 @@ base_url: 'http://help.avem.es'
 # server when a directory is requested. Usually, index files are named
 # “index.html”, but depending on the web server, this may be something else,
 # such as “default.htm”. This list is used by Nanoc to generate pretty URLs.
-index_filenames: [ 'index.html' ]
+index_filenames: [ 'index.php', 'index.html' ]
 
 # Whether or not to generate a diff of the compiled content when compiling a
 # site. The diff will contain the differences between the compiled content

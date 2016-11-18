@@ -15,13 +15,12 @@ route '/index.html' do
 	item.identifier.to_s
 end
 
-compile '/search.html' do
+compile '/**/*.php' do
 	filter :erb
-	layout '/content.html'
 end
 
-route '/search.html' do
-	item.identifier.without_ext + '/index.html'
+route '/search.php' do
+	item.identifier.without_ext + '/index.php'
 end
 
 compile '/articles/**/*.md' do
