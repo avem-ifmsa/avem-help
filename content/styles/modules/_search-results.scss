@@ -3,7 +3,7 @@ $search-results-entry-title-color: #4c8ce6;
 
 .search-results {
 	.gsc-control-cse {
-		background-color: transparent;
+		background: none;
 		border: 0;
 		padding: 0;
 	}
@@ -13,10 +13,6 @@ $search-results-entry-title-color: #4c8ce6;
 	}
 
 	.gcsc-branding {
-		display: none;
-	}
-
-	.gsc-result-info {
 		display: none;
 	}
 
@@ -42,9 +38,5 @@ $search-results-entry-title-color: #4c8ce6;
 
 	.gsc-cursor-box {
 		margin-bottom: 0 !important;
-	}
-
-	.gcsc-branding {
-		display: none;
 	}
 }
