@@ -3,6 +3,8 @@ $nav-color-sm: #c2c2c2;
 $nav-hover-color-sm: lighten($nav-color-sm, 33%);
 
 .nav {
+	box-sizing: border-box;
+	
 	@media screen and (min-width: 769px) {
 		text-align: center;
 		white-space: nowrap;
