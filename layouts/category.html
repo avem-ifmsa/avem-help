@@ -1,0 +1,20 @@
+<% render '/content.html' do %>
+<% category = @item %>
+	<div class="category">
+		<h1 class="category__name"><%= category_name(category) %></h1>
+		<ul class="category__articles">
+			<% category_articles(category).each do |article| %>
+				<li class="category__article">
+					<a href="<%= article_link(article) %>">
+						<h2 class="category__article-title">
+							<%= article_title(article) %>
+						</h2>
+						<p class="category__article-excerpt">
+							<%= article_excerpt(article) %>
+						</p>
+					</a>
+				</li>
+			<% end %>
+		</ul>
+	</div>
+<% end %>

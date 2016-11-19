@@ -1,0 +1,39 @@
+$category_link_color: #4c8ce6;
+$category_article_hover_bg: #e9f1fc;
+
+.category {
+	font-family: $display-font;
+
+	&__name {
+		font-size: 24px;
+		font-weight: normal;
+	}
+
+	&__articles {
+		list-style-type: none;
+		margin: 18px 0;
+		padding: 0;
+	}
+
+	&__article {
+		border-radius: 4px;
+		margin-left: -15px;
+		padding: 15px;
+
+		&:hover {
+			background-color: $category_article_hover_bg;
+		}
+	}
+
+	&__article-title {
+		color: $category_link_color;
+		display: block;
+		font-size: 16px;
+		font-weight: 500;
+		margin-bottom: 4px;
+	}
+
+	&__article-excerpt {
+		color: #000;
+	}
+}

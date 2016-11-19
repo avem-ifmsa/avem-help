@@ -29,7 +29,16 @@ compile '/articles/**/*.md' do
 end
 
 route '/articles/**/*.md' do
-	article_link item
+	article_link(item)
+end
+
+compile '/categories/*' do
+	filter :erb
+	layout '/category.*'
+end
+
+route '/categories/*' do
+	category_link(item) + '/index.html'
 end
 
 compile '/**/*.php' do

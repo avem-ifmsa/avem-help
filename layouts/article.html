@@ -1,10 +1,11 @@
 <% render '/content.html' do %>
+<% article = @item; category = article_category(article) %>
 	<article class="article">
 		<header class="article__header">
-			<a class="article__category" href="<%= category_link(@item) %>">
-				<%= article_category(@item) %>
+			<a class="article__category" href="<%= category_link(category) %>">
+				<%= category_name(category) %>
 			</a>
-			<h1 class="article__title"><%= article_title(@item) %></h1>
+			<h1 class="article__title"><%= article_title(article) %></h1>
 		</header>
 		<div class="article__content">
 			<%= yield %>

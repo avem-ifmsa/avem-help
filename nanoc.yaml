@@ -65,6 +65,10 @@ data_sources:
     # “full”, meaning that identifiers include file extensions. This can also
     # be “legacy”, primarily used by older Nanoc sites.
     identifier_type: full
+  -
+    type: article_categories
+    items_root: /
+    articles_root: content/articles
 
 # Configuration for the “check” command, which run unit tests on the site.
 checks:
