@@ -7,6 +7,7 @@ $header-logo-size-sm: 45px;
 	&__logo {
 		background-image: url('../images/avem-logo.png');
 		background-size: cover;
+		display: block;
 		margin: 0 auto;
 
 		@media screen and (min-width: 769px) {
@@ -17,24 +18,6 @@ $header-logo-size-sm: 45px;
 		@media screen and (max-width: 768px) {
 			height: $header-logo-size-sm;
 			width: $header-logo-size-sm;
-		}
-	}
-
-	&__extra {
-		font-size: .9em;
-		position: absolute;
-		right: 2%;
-		top: 50%;
-		transform: translateY(-50%);
-		white-space: nowrap;
-
-		& > * {
-			display: inline-block;
-			vertical-align: middle;
-
-			&:not(:first-child) {
-				margin-left: 10px;
-			}
 		}
 	}
 

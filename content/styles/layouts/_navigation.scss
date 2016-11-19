@@ -7,21 +7,23 @@ body {
 }
 
 .l-body {
-	overflow: hidden;
-	transform: none;
-	transition: transform $sidenav-slide-duration;
+	@media screen and (max-width: 768px) {
+		overflow: hidden;
+		transform: none;
+		transition: transform $sidenav-slide-duration;
 
-	&.is-menu-shown {
-		max-height: 100vh;
-		transform: translateX($sidenav-width);
+		&.is-menu-shown {
+			max-height: 100vh;
+			transform: translateX($sidenav-width);
 
-		&::before {
-			content: '';
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
+			&::before {
+				content: '';
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
 		}
 	}
 }
@@ -33,9 +35,9 @@ body {
 	padding: 20px 0;
 	position: fixed;
 	top: 0;
-	right: 100%;
 	transform: none;
 	transition: transform $sidenav-slide-duration;
+	right: 100%;
 	width: $sidenav-width;
 	z-index: 1;
 
