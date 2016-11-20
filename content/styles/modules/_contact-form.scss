@@ -1,0 +1,62 @@
+$contact-form-color: #545454;
+$contact-form-input-bg: #fff;
+$contact-form-input-padding: 11px;
+$contact-form-input-height: 40px;
+$contact-form-textarea-height: 325px;
+
+.contact-form {
+	font-family: $display-font;
+
+	label {
+		color: $contact-form-color;
+		cursor: pointer;
+		display: block;
+		font-size: 16px;
+		font-weight: 600;
+		padding: 11px 0;
+	}
+
+	input[type="text"], input[type="email"], textarea {
+		background-color: $contact-form-input-bg;
+		border: 0;
+		border-radius: 4px;
+		display: block;
+		padding: $contact-form-input-padding;
+		width: 100%;
+	}
+
+	input[type="text"], input[type="email"] {
+		height: $contact-form-input-height;
+	}
+
+	textarea {
+		height: $contact-form-textarea-height;
+	}
+
+	&__subject, &__message, &__sender {
+		margin-bottom: 30px;
+	}
+
+	&__submit {
+		margin: 40px 0;
+
+		input {
+			font-size: 16px;
+			font-weight: 600;
+			margin: 0 auto;
+			padding: 10px;
+		}
+	}
+
+	&__mailto {
+		font-size: 14px;
+		padding: 40px 0;
+		text-align: center;
+
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

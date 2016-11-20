@@ -29,23 +29,33 @@ $btn-mono-hover-bg: rgba(#333, .7);
 
 .btn--primary {
 	background-color: $btn-primary-bg;
+	border: 1px solid $btn-primary-bg;
 	color: $btn-primary-color;
 
 	&:hover {
 		background-color: lighten($btn-primary-bg, 3%);
-		border: 1px solid darken($btn-primary-bg, 5%);
+		border-color: darken($btn-primary-bg, 5%);
 		box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+	}
+
+	&:active {
+		box-shadow: 0 1px 3px rgba(0,0,0,.2) inset;
 	}
 }
 
 .btn--secondary {
 	background-color: $btn-secondary-bg;
+	border: 1px solid $btn-secondary-bg;
 	color: $btn-secondary-color;
 
 	&:hover {
 		background-color: lighten($btn-secondary-bg, 3%);
-		border: 1px solid darken($btn-secondary-bg, 5%);
+		border-color: darken($btn-secondary-bg, 5%);
 		box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+	}
+
+	&:active {
+		box-shadow: 0 1px 3px rgba(0,0,0,.2) inset;
 	}
 }
 
