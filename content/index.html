@@ -6,8 +6,10 @@
 					<%= category_name(category) %>
 				</a>
 			</h1>
+			<% articles = category_articles(category) %>
+			<% articles_shown = articles.take(6) %>
 			<ul class="index__articles">
-				<% category_articles(category).each do |article| %>
+				<% articles_shown.each do |article| %>
 					<li class="index__article">
 						<a class="index__link" href="<%= article_link(article) %>">
 							<%= article_title(article) %>
@@ -15,6 +17,16 @@
 					</li>
 				<% end %>
 			</ul>
+			<% if articles_shown.count < articles.count %>
+				<a class="index__rem-link" href="<%= category_link(category) %>">
+					<% remaining_count = articles.count - articles_shown.count %>
+					<% if remaining_count == 1 %>
+						Ver un artículo restante
+					<% else %>
+						Ver los <%= remaining_count %> artículos restantes
+					<% end %>
+				</a>
+			<% end %>
 		</div>
 	<% end %>
 </div>

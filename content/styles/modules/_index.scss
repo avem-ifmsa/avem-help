@@ -2,6 +2,9 @@ $index-article-color: #4c8ce6;
 $index-article-hover-bg: #e0ebfb;
 $index-article-active-bg: #a6c6f2;
 
+$index-rem-link-color: #bbb;
+$index-rem-link-hover-color: #999;
+
 .index {
 	display: flex;
 	flex-wrap: wrap;
@@ -45,6 +48,14 @@ $index-article-active-bg: #a6c6f2;
 
 		&:active {
 			background-color: $index-article-active-bg;
+		}
+	}
+
+	&__rem-link {
+		color: $index-rem-link-color;
+
+		&:hover {
+			color: $index-rem-link-hover-color;
 		}
 	}
 }
