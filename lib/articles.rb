@@ -29,7 +29,7 @@ end
 
 def article_excerpt(item)
 	content = Nokogiri::HTML(item.compiled_content).content
-	content.split(' ').take(30).join(' ') + '...'
+	content.split(' ').take(40).join(' ') + '...'
 end
 
 def article_slug(item)

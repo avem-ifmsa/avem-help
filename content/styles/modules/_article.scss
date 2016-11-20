@@ -1,6 +1,8 @@
 .article {
 	&__category {
 		color: #aaa;
+		font-size: .9em;
+		font-weight: bold;
 
 		&:hover {
 			text-decoration: underline;
@@ -12,11 +14,12 @@
 		font-size: 36px;
 		font-weight: 500;
 		line-height: 1.25;
+		margin-bottom: 30px;
 	}
 
 	&__content {
 		color: #1f1f1f;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 1.4;
 
 		h2 {

@@ -7,6 +7,10 @@ $text-font: 'Libre Franklin';
 	     url(/fonts/libre-franklin.regular.ttf);
 }
 
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
 a, button, input, label, nav {
 	font-family: $display-font;
 }

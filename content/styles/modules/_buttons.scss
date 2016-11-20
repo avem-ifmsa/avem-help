@@ -22,6 +22,7 @@ $btn-mono-hover-bg: rgba(#333, .7);
 	cursor: pointer;
 	outline: 0;
 	padding: 0;
+	-webkit-tap-highlight-color: transparent;
 	text-decoration: none;
 	white-space: nowrap;
 }
@@ -48,32 +49,9 @@ $btn-mono-hover-bg: rgba(#333, .7);
 	}
 }
 
-.btn--extra {
-	background-color: $btn-extra-bg;
-	border: 2px solid $btn-extra-color;
-	border-radius: $btn-extra-border-radius;
-	color: $btn-extra-color;
-	padding: 10px 15px;
-	text-transform: uppercase;
-
-	&:hover {
-		background-color: $btn-extra-hover-bg;
-		color: $btn-extra-hover-color;
-	}
-}
-
-.btn--mono {
-	color: $btn-mono-bg;
-
-	&:hover {
-		color: $btn-mono-hover-bg;
-	}
-}
-
 .btn--fixed {
 	background-color: transparent;
 	border: 0;
 	cursor: pointer;
-	outline: 0;
 	padding: 10px;
 }
