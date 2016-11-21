@@ -1,4 +1,5 @@
 include Nanoc::Helpers::Rendering
+include Nanoc::Helpers::XMLSitemap
 
 def slug_for(string)
 	string.strip.downcase

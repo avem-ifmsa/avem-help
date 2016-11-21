@@ -1,0 +1,3 @@
+<%= xml_sitemap items: @items.find_all('/**/*.html')     +
+                       @items.find_all('/search.php')    +
+                       @items.find_all('/articles/**/*') %>
