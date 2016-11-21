@@ -1,0 +1,1 @@
+Sí, puedes hacerte socio en cualquier momento a lo largo del curso. No obstante, cuanto antes te apuntes, antes empezarás a acumular puntos de las actividades en las que participes. Por tanto, ¡más puntos para el siguiente reparto de intercambios!
