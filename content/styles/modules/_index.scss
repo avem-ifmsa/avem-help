@@ -6,11 +6,6 @@ $index-rem-link-color: #bbb;
 $index-rem-link-hover-color: #999;
 
 .index {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 0 auto;
-
 	&__group {
 		box-sizing: border-box;
 		padding: 5px;
