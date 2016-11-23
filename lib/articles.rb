@@ -28,8 +28,13 @@ def article_index(item)
 end
 
 def article_excerpt(item)
-	content = Nokogiri::HTML(item.compiled_content).content
-	content.split(' ').take(40).join(' ') + '...'
+	max_words = 40
+	content = Nokogiri::HTML(item.compiled_content).content.split
+	if content.size > max_words
+		content = content.take(40)
+		content.last << '...'
+	end
+	content.join(' ')
 end
 
 def article_slug(item)
