@@ -36,8 +36,12 @@
 			line-height: 1.25;
 		}
 
-		p {
-			margin-bottom: 25px;
+		ol, p, ul {
+			margin-bottom: 20px;
+		}
+
+		li {
+			margin: 10px 0;
 		}
 	}
 }
