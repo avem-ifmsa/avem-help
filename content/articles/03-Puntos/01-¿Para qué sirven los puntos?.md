@@ -1,0 +1,1 @@
+Los puntos sirven para conseguir **intercambios**. Los intercambios se reparten por el mecanismo de subasta, en la cual los socios son ordenados por orden decreciente de puntos. El socio que más puntos tiene, elige destino primero. De manera que, cuantos más puntos tengas, más posibilidades tendrás de elegir el intercambio que te gusta.
