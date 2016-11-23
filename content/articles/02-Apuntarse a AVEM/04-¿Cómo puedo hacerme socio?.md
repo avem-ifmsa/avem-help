@@ -1,6 +1,6 @@
 Para hacerte socio debes seguir estos sencillos pasos:
 
-1. Primero tienes que registrarte en la [web](http://avem.es). Para ello, dirígete a la página principal. En la barra de la izquierda encontrarás el apartado "Hazte socio".
+1. Primero, tienes que registrarte en la [web](http://avem.es). Para ello, dirígete a la página principal. En la barra de la izquierda encontrarás el apartado "Hazte socio".
 2. En segundo lugar, deberás pagar la cuota de socio (12€). Tienes dos opciones:
 	* Realizar una transferencia bancaria a la cuenta allí indicada, con tu nombre y apellidos como concepto.
 	* Hacer un pago en efectivo al tesorero en nuestro despacho del tercer piso.

@@ -1,1 +1,1 @@
-Todas las actividades tienen asignado un número de puntos. Puedes consultar todo lo relativo a los puntos en el apartado “Baremo de puntos” del menú de la izquierda de la página principal de la [web](http://avem.es).
+**Todas las actividades** tienen asignado un número de puntos. Puedes consultar todo lo relativo a los puntos en el apartado “Baremo de puntos” del menú de la izquierda de la página principal de la [web](http://avem.es).
