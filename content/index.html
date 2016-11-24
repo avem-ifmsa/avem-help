@@ -18,7 +18,7 @@
 				<% end %>
 			</ul>
 			<% if articles_shown.count < articles.count %>
-				<a class="index__rem-link" href="<%= category_link(category) %>">
+				<a class="index__link index__remaining" href="<%= category_link(category) %>">
 					<% remaining_count = articles.count - articles_shown.count %>
 					<% if remaining_count == 1 %>
 						Ver un artículo restante

@@ -6,14 +6,22 @@ $index-rem-link-color: #bbb;
 $index-rem-link-hover-color: #999;
 
 .index {
+	&::after {
+		clear: both;
+		content: '';
+		display: block;
+	}
+
 	&__group {
 		box-sizing: border-box;
-		padding: 5px;
+		margin-bottom: 10px;
+		padding: 12px 0;
 	}
 
 	&__link {
 		color: inherit;
 		cursor: pointer;
+		display: inline-block;
 		outline: 0;
 		-webkit-tap-highlight-color: rgba(#000, 0);
 		text-decoration: none;
@@ -22,6 +30,7 @@ $index-rem-link-hover-color: #999;
 	&__category {
 		font-size: 1.1em;
 		font-weight: normal;
+		margin-bottom: 10px;
 	}
 
 	&__articles {
@@ -31,22 +40,25 @@ $index-rem-link-hover-color: #999;
 	}
 
 	&__article {
-		border-radius: 2px;
 		color: $index-article-color;
-		margin: 0;
-		margin-left: -10px;
-		padding: 3px 10px;
 
-		&:hover {
-			background-color: $index-article-hover-bg;
-		}
+		.index__link {
+			border-radius: 2px;
+			margin-left: -10px;
+			padding: 4px 10px;
 
-		&:active {
-			background-color: $index-article-active-bg;
+			&:hover {
+				background-color: $index-article-hover-bg;
+			}
+
+			&:active {
+				background-color: $index-article-active-bg;
+			}
 		}
 	}
 
-	&__rem-link {
+	&__remaining {
+		margin-top: 10px;
 		color: $index-rem-link-color;
 
 		&:hover {
