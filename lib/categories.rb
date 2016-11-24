@@ -6,7 +6,7 @@ end
 def category_index(item)
 	path = item.identifier.without_ext
 	result = %r[^/categories/(\d+)-].match(path)
-	(result && result[1]) || 0
+	(result && result[1].to_i) || 0
 end
 
 def category_name(item)

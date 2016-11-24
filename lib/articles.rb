@@ -24,7 +24,7 @@ end
 def article_index(item)
 	path = item.identifier.without_ext
 	result = %r[^/articles/[^/]+/(\d+)-].match(path)
-	(result && result[1]) || 0
+	(result && result[1].to_i) || 0
 end
 
 def article_excerpt(item)
