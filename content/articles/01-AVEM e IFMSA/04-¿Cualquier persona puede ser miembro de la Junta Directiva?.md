@@ -1,0 +1,1 @@
+Cualquier persona puede formar parte de la Junta Directiva Local de AVEM. Para serlo, solo has de cumplir dos requisitos: **ser socio de AVEM** y **ser votado en Asamblea General**. Además, cualquier persona puede formar parte de la Junta Directiva de IFMSA-Spain con estos  mismos requisitos.
