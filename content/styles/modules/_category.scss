@@ -23,14 +23,12 @@ $category-article-title-color: #4c8ce6;
 		-webkit-tap-highlight-color: transparent;
 
 		@media screen and (min-width: 481px) {
-			margin-left: -15px;
-			margin-right: -15px;
+			margin: 0 -15px;
 			padding: 15px;
 		}
 
 		@media screen and (max-width: 480px) {
-			margin-left: -5px;
-			margin-right: -5px;
+			margin: 0 -5px;
 			padding: 5px;
 		}
 
