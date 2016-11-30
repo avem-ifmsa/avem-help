@@ -1,4 +1,5 @@
 require 'nokogiri'
+require 'uri'
 
 def category_articles(category)
 	@items.find_all('/articles/**/*')
@@ -18,7 +19,7 @@ end
 def article_title(item)
 	path = item.identifier.without_ext
 	result = %r[^/articles/[^/]+/(?:\d+-)?([^/]+)].match(path)
-	result && result[1]
+	result && URI.unescape(result[1])
 end
 
 def article_index(item)

@@ -8,6 +8,11 @@ gem 'dotenv', '~> 2.1', '>= 2.1.1'
 gem 'nanoc', '~> 4.3', '>= 4.3.7'
 gem 'nokogiri', '~> 1.6', '>= 1.6.8'
 
+if Gem.win_platform?
+	gem 'wdm', '>= 0.1.0'
+	gem 'win32console', '~> 1.3', '>= 1.3.2'
+end
+
 # compass dependencies
 gem 'font-awesome-sass', '~> 4.7'
 

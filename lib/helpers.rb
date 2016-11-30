@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::XMLSitemap
 
