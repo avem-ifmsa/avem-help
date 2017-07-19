@@ -2,21 +2,21 @@
 	<form class="contact-form nocontent" method="post" action="contact.php">
 		<div class="contact-form__subject">
 			<label for="subject">Asunto</label>
-			<input name="subject" type="text">
+			<input id="subject" name="subject" type="text">
 		</div>
 
 		<div class="contact-form__message">
 			<label for="message">Mensaje</label>
-			<textarea name="message" rows="10"></textarea>
+			<textarea id="message" name="message" rows="10"></textarea>
 		</div>
 
 		<div class="contact-form__sender">
 			<label for="sender">Tu dirección de correo-e</label>
-			<input name="sender" type="email">
+			<input id="sender" name="sender" type="email">
 		</div>
 
 		<div class="contact-form__submit">
-			<input class="btn btn--primary" type="submit" value="Enviar mensaje">
+			<button type="submit" class="btn btn--primary">Enviar mensaje</button>
 		</div>
 
 		<div class="contact-form__mailto">
