@@ -1,0 +1,1 @@
+web: bundle exec nanoc live -p 80
